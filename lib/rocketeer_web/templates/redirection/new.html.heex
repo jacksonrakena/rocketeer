@@ -1,0 +1,5 @@
+<h1>New Redirection</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.redirection_path(@conn, :create)) %>
+
+<span><%= link "Back", to: Routes.redirection_path(@conn, :index) %></span>
